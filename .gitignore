@@ -1,0 +1,14 @@
+[Ll]ibrary/ 
+[Tt]emp/ 
+[Oo]bj/ 
+[Bb]uild/ 
+[Bb]uilds/ 
+[Bb]in/ 
+[Dd]ebug/ 
+*.user 
+*.csproj 
+*.sln 
+*.pidb 
+*.apk 
+*.unitypackage 
+.vs/ 
