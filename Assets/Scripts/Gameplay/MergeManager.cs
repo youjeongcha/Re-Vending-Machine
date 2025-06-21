@@ -2,26 +2,45 @@ using UnityEngine;
 
 public class MergeManager : MonoBehaviour
 {
-    public GameObject[] mergedPrefabs;
+    public static MergeManager Instance;
 
-    public void TryMerge(GameObject a, GameObject b)
+    // ballPrefabs 배열로 단계별 프리팹을 관리
+    public GameObject[] ballPrefabs;
+
+    void Awake()
     {
-        int index = GetNextIndex(a);
-        if (index >= 0 && index < mergedPrefabs.Length)
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
+
+    public void Merge(Ball a, Ball b)
+    {
+        if (a == null || b == null) return;
+
+        Vector3 pos = (a.transform.position + b.transform.position) / 2.0f;
+        int nextLevel = a.ballLevel + 1; ;
+
+        // 두 공을 제거하고 다음 단계 공으로 교체
+        Destroy(a.gameObject);
+        Destroy(b.gameObject);
+
+        if (nextLevel < ballPrefabs.Length)
         {
-            Vector3 pos = (a.transform.position + b.transform.position) / 2;
-            Destroy(a); Destroy(b);
-            Instantiate(mergedPrefabs[index], pos, Quaternion.identity);
-            GameManager.Instance.AddScore((index + 1) * 10);
+            GameObject newBall = Instantiate(ballPrefabs[nextLevel], pos, Quaternion.identity);
+            //GameManager.Instance.AddScore((nextLevel + 1) * 10);  // 예시 점수
+        }
+        else
+        {
+            Debug.Log("최고 단계입니다!");
         }
     }
 
-    int GetNextIndex(GameObject ball)
+/*    int GetNextIndex(Ball ball)
     {
-        for (int i = 0; i < mergedPrefabs.Length; i++)
+        for (int i = 0; i < ballPrefabs.Length; i++)
         {
-            if (ball.name.Contains(mergedPrefabs[i].name)) return i + 1;
+            if (ball.name.Contains(ballPrefabs[i].name)) return i + 1;
         }
         return -1;
-    }
+    }*/
 }
