@@ -51,6 +51,9 @@ public class BallSpawner : MonoBehaviour
         // 버튼에서 손을 떼면 중력을 켜서 낙하시킴
         if (Input.GetMouseButtonUp(0))
         {
+            // 사운드 - 공 떨어질 때
+            SoundManager.Instance.PlaySFX(SoundManager.Instance.dropSfxClip);
+
             currentBall.GetComponent<Rigidbody>().isKinematic = false;
             currentBall = null;
         }

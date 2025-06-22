@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64bff811cc6640a4fa3bd817c4e78d56, type: 3}
+  m_Name: Lev9
+  m_EditorClassIdentifier: 
+  level: 9
+  prefab: {fileID: 1598737658758947845, guid: d5f67d8cf4cadc14b9cb56959cc988ed, type: 3}
+  score: 10000
