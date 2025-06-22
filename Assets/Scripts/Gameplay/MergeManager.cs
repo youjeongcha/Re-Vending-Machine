@@ -48,6 +48,9 @@ public class MergeManager : MonoBehaviour
         Destroy(a.gameObject);
         Destroy(b.gameObject);
 
+        // 사운드 - 병합 순간
+        SoundManager.Instance.PlayMergeSFXByEffect("normal");
+
         if (nextLevel < ballDataList.Length)
         {
             BallData nextData = ballDataList[nextLevel];
@@ -62,8 +65,11 @@ public class MergeManager : MonoBehaviour
             if (rbNew != null) { rbNew.velocity = Vector3.zero; rbNew.angularVelocity = Vector3.zero; }
 
             // 병합 이펙트
-            if (nextData.mergeEffect != null)
-                Instantiate(nextData.mergeEffect, mergePos, Quaternion.identity);
+/*            if (nextData.mergeEffect != null)
+            {
+                var effect = Instantiate(nextData.mergeEffect, mergePos, Quaternion.identity);
+                Destroy(effect.gameObject, 0.7f); // 0.7초 후 자동 제거
+            }*/
 
             // 점수 추가
             GameManager.Instance.AddScore(nextData.score);

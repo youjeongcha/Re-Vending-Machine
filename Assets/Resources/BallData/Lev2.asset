@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Lev2
   m_EditorClassIdentifier: 
   level: 2
-  prefab: {fileID: 7995497868466590050, guid: 174531280e815ab4c80504bcb47a8635, type: 3}
-  score: 3
-  mergeEffect: {fileID: 0}
+  prefab: {fileID: 9100271328223055971, guid: 37d83eba6ced4d540bfc75db09fa899e, type: 3}
+  score: 5
