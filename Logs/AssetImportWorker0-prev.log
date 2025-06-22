@@ -15,7 +15,7 @@ C:/Users/uj090/Re_VendingMachine
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53846
+59931
 Successfully changed project path to: C:/Users/uj090/Re_VendingMachine
 C:/Users/uj090/Re_VendingMachine
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/uj090/Re_VendingMachine
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12944] Host "[IP] 211.221.26.231 [Port] 0 [Flags] 2 [Guid] 1525063571 [EditorId] 1525063571 [Version] 1048832 [Id] WindowsEditor(7,youjeong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [40324] Host "[IP] 211.221.26.231 [Port] 0 [Flags] 2 [Guid] 3567668806 [EditorId] 3567668806 [Version] 1048832 [Id] WindowsEditor(7,youjeong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12944] Host "[IP] 211.221.26.231 [Port] 0 [Flags] 2 [Guid] 1525063571 [EditorId] 1525063571 [Version] 1048832 [Id] WindowsEditor(7,youjeong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [40324] Host "[IP] 211.221.26.231 [Port] 0 [Flags] 2 [Guid] 3567668806 [EditorId] 3567668806 [Version] 1048832 [Id] WindowsEditor(7,youjeong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
-Refreshing native plugins compatible for Editor in 1656.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 13.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.390838 seconds.
-- Loaded All Assemblies, in  7.116 seconds
+Registered in 0.011156 seconds.
+- Loaded All Assemblies, in  0.338 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 352 ms
+Android Extension - Scanning For ADB Devices 312 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.659 seconds
-Domain Reload Profiling: 7773ms
-	BeginReloadAssembly (5189ms)
+- Finished resetting the current domain, in  0.621 seconds
+Domain Reload Profiling: 957ms
+	BeginReloadAssembly (105ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (347ms)
+	RebuildCommonClasses (32ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (443ms)
-	LoadAllAssembliesAndSetupDomain (1127ms)
-		LoadAssemblies (5188ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (129ms)
+		LoadAssemblies (102ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1124ms)
-			TypeCache.Refresh (1122ms)
-				TypeCache.ScanAssembly (1016ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (125ms)
+				TypeCache.ScanAssembly (113ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (660ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (621ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (607ms)
+		SetupLoadedEditorAssemblies (564ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (453ms)
+			InitializePlatformSupportModulesInManaged (412ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (99ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
+			ProcessInitializeOnLoadAttributes (104ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,148 +118,53 @@ Domain Reload Profiling: 7773ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  5.142 seconds
-Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.682 seconds
+Refreshing native plugins compatible for Editor in 4.45 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.628 seconds
-Domain Reload Profiling: 5767ms
-	BeginReloadAssembly (136ms)
+- Finished resetting the current domain, in  0.686 seconds
+Domain Reload Profiling: 1365ms
+	BeginReloadAssembly (134ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (4931ms)
-		LoadAssemblies (4547ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (466ms)
+		LoadAssemblies (358ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (471ms)
-			TypeCache.Refresh (449ms)
-				TypeCache.ScanAssembly (380ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (628ms)
+		AnalyzeDomain (189ms)
+			TypeCache.Refresh (159ms)
+				TypeCache.ScanAssembly (144ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (687ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (492ms)
+		SetupLoadedEditorAssemblies (551ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (3ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (354ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (342ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 4.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3152 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (56.9 KB). Loaded Objects now: 3616.
-Memory consumption went from 128.1 MB to 128.1 MB.
-Total: 3.240500 ms (FindLiveObjects: 0.165700 ms CreateObjectMapping: 0.066800 ms MarkObjects: 2.928500 ms  DeleteObjects: 0.078300 ms)
+Unloading 5122 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 99 unused Assets / (2.9 MB). Loaded Objects now: 5565.
+Memory consumption went from 218.4 MB to 215.5 MB.
+Total: 3.900900 ms (FindLiveObjects: 0.278800 ms CreateObjectMapping: 0.164800 ms MarkObjects: 2.573100 ms  DeleteObjects: 0.883000 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 657862.176606 seconds.
-  path: Assets/Fringe Game Design/Vendings/Demo Scene/Vendings Demo Scene.unity
-  artifactKey: Guid(fa9114fc56b374f428d540b62e6fdbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fringe Game Design/Vendings/Demo Scene/Vendings Demo Scene.unity using Guid(fa9114fc56b374f428d540b62e6fdbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6a86401f93550273150002b0eafdfc') in 0.002461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Fringe Game Design
-  artifactKey: Guid(22e687c308653074ab758be77945bc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fringe Game Design using Guid(22e687c308653074ab758be77945bc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8ec98120894f7714f9b13ce85b8d1a6') in 0.000341 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.023 seconds
-Refreshing native plugins compatible for Editor in 6.22 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.847 seconds
-Domain Reload Profiling: 2864ms
-	BeginReloadAssembly (217ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (44ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (691ms)
-		LoadAssemblies (584ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (228ms)
-			TypeCache.Refresh (176ms)
-				TypeCache.ScanAssembly (160ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (1848ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1196ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (143ms)
-			ProcessInitializeOnLoadAttributes (932ms)
-			ProcessInitializeOnLoadMethodAttributes (75ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Shader 'Universal Render Pipeline/Particles/Simple Lit': fallback shader 'Universal Render Pipeline/Particles/Unlit' not found
-Shader 'Universal Render Pipeline/Nature/SpeedTree7': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Shader 'Universal Render Pipeline/Unlit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Hidden/Universal Render Pipeline/StencilDeferred': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Hidden/Universal Render Pipeline/FallbackError': fallback shader 'Hidden/Core/FallbackError' not found
-Refreshing native plugins compatible for Editor in 4.26 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5054 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 111 unused Assets / (7.0 MB). Loaded Objects now: 5443.
-Memory consumption went from 193.0 MB to 186.0 MB.
-Total: 5.879000 ms (FindLiveObjects: 0.316300 ms CreateObjectMapping: 0.164000 ms MarkObjects: 2.853400 ms  DeleteObjects: 2.544400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
@@ -276,303 +181,17 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 305.012896 seconds.
-  path: Assets/New Custom Universal Renderer Data.asset
-  artifactKey: Guid(e85721c4b7e2ca240811feaa20a6d8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Custom Universal Renderer Data.asset using Guid(e85721c4b7e2ca240811feaa20a6d8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6002246cf162b919f0268b504e359d37') in 0.054948 seconds
+  Time since last request: 676784.719219 seconds.
+  path: Assets/Prefabs/Vendings
+  artifactKey: Guid(53ece82da0271c242a1ed1fafcf69c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vendings using Guid(53ece82da0271c242a1ed1fafcf69c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad83e84dde80e45ddd7ea618d1cb5ac') in 0.002032 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.100002 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(b8ad8580e5450a840853c96acca3b5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(b8ad8580e5450a840853c96acca3b5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb061c2f6eccdce3933c638203df951') in 0.001588 seconds
+  Time since last request: 3.690914 seconds.
+  path: Assets/Scripts/Gameplay/MergeManager.cs
+  artifactKey: Guid(798a953a77f0d4247bdb3c7d519a42c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/MergeManager.cs using Guid(798a953a77f0d4247bdb3c7d519a42c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1b79f5d6a533a3a8bf624c992f73b0e') in 0.000481 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 152.863988 seconds.
-  path: Assets/New Universal Render Pipeline Asset.asset
-  artifactKey: Guid(b4b03e67a7e9348428524aa3920dd5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Universal Render Pipeline Asset.asset using Guid(b4b03e67a7e9348428524aa3920dd5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fea223493cf2bc8e5930b53858d7f10') in 0.042695 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 82
-========================================================================
-Received Import Request.
-  Time since last request: 187.459175 seconds.
-  path: Assets/ReVending_URP_Asset.asset
-  artifactKey: Guid(b4b03e67a7e9348428524aa3920dd5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ReVending_URP_Asset.asset using Guid(b4b03e67a7e9348428524aa3920dd5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba084912dcb3c92ec0a73240d1dd2926') in 0.038230 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 82
-========================================================================
-Received Import Request.
-  Time since last request: 1.543267 seconds.
-  path: Assets/New Universal Render Pipeline Asset_Renderer.asset
-  artifactKey: Guid(3b60ff4e12ba9ef45877182236eb6cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Universal Render Pipeline Asset_Renderer.asset using Guid(3b60ff4e12ba9ef45877182236eb6cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c5980873de5d05976637bad663d88a') in 0.037964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 5.499906 seconds.
-  path: Assets/ReVending_URP_Asset_Renderer.asset
-  artifactKey: Guid(3b60ff4e12ba9ef45877182236eb6cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ReVending_URP_Asset_Renderer.asset using Guid(3b60ff4e12ba9ef45877182236eb6cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed9789a31ea23c8ec90bcd754f3f4b4') in 0.032880 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 14.045479 seconds.
-  path: Assets/ReVending_URP_Asset.asset
-  artifactKey: Guid(b4b03e67a7e9348428524aa3920dd5ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/ReVending_URP_Asset.asset using Guid(b4b03e67a7e9348428524aa3920dd5ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fd3991da075bea1e2673e795ccb5d06a') in 0.311885 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 82
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Fringe Game Design/Vendings/Demo Scene/Vendings Demo Scene.unity
-  artifactKey: Guid(fa9114fc56b374f428d540b62e6fdbec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Demo Scene/Vendings Demo Scene.unity using Guid(fa9114fc56b374f428d540b62e6fdbec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '952b240afd2981bf7bb4ad06448e8016') in 0.010430 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Scripts/Gameplay/ScoreManager.cs
-  artifactKey: Guid(861515d8c8a16f44194a287ae9ebdb0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/Gameplay/ScoreManager.cs using Guid(861515d8c8a16f44194a287ae9ebdb0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4220125a9699a41bab891ea245295bfe') in 0.017359 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000113 seconds.
-  path: Assets/Fringe Game Design/Vendings/Textures/Vending Items/atlas_vending_items.png
-  artifactKey: Guid(79d16f1b4192cd841b8c6df15344b417) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Textures/Vending Items/atlas_vending_items.png using Guid(79d16f1b4192cd841b8c6df15344b417) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b53e89800ae8f22ee1d9446900e9602e') in 0.074232 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Scenes/CollectionScene.unity
-  artifactKey: Guid(6cf0de0e142884c468e1354546a330aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scenes/CollectionScene.unity using Guid(6cf0de0e142884c468e1354546a330aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd91b3749f6b1a881a048941780b16709') in 0.011232 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Scenes/GachaScene.unity
-  artifactKey: Guid(cd0663432e914a445bed6475408add2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scenes/GachaScene.unity using Guid(cd0663432e914a445bed6475408add2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c89eac82830119bf32d1ffc7a1479c84') in 0.013405 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000113 seconds.
-  path: Assets/Scripts/Core/PvPManager.cs
-  artifactKey: Guid(079186305164501429d3be4b1e3cb61e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/Core/PvPManager.cs using Guid(079186305164501429d3be4b1e3cb61e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e3a187039e4c5c66b125c4d0caf3811b') in 0.015641 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Scripts/Gameplay/BallSpawner.cs
-  artifactKey: Guid(7aa97b842000d594fa6c4618cb6b0c35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/Gameplay/BallSpawner.cs using Guid(7aa97b842000d594fa6c4618cb6b0c35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ab46a978b0f07bebfeab760b9c43f636') in 0.015686 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Fringe Game Design/Vendings/Meshes/Vendings/FBX/vendings.fbx
-  artifactKey: Guid(b2dfce70f4c1afa42834582af78cafe4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Meshes/Vendings/FBX/vendings.fbx using Guid(b2dfce70f4c1afa42834582af78cafe4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3b3889b9b8aa09578c6f32173fcb6297') in 0.062932 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Scripts/Core/Input.cs
-  artifactKey: Guid(40878b37899ac4b4aa2e35e9b2f95d29) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/Core/Input.cs using Guid(40878b37899ac4b4aa2e35e9b2f95d29) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '173c3255064e740746ec85aaa8e730ce') in 0.015580 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Fringe Game Design/Vendings/Demo Scene/Vendings Demo Scene/LightingData.asset
-  artifactKey: Guid(6ef59fdf59c59bf43be8901d28bda6c3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Demo Scene/Vendings Demo Scene/LightingData.asset using Guid(6ef59fdf59c59bf43be8901d28bda6c3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7204e6bd8f2152271da8df1377a85666') in 0.014724 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Fringe Game Design/Vendings/Prefabs/Vending Items/green_soda.prefab
-  artifactKey: Guid(942c197e9d313b6459b915e3adf55ebe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Prefabs/Vending Items/green_soda.prefab using Guid(942c197e9d313b6459b915e3adf55ebe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f785f597f52e9849af4ec16914549a92') in 0.029544 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Scripts/GameData.cs
-  artifactKey: Guid(392971e6236436743a9f6c3b9935eb40) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/GameData.cs using Guid(392971e6236436743a9f6c3b9935eb40) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3ae575a9045d874892158fb1bfc98a3f') in 0.013791 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Fringe Game Design/Vendings/Materials/interior/floor_002_material.mat
-  artifactKey: Guid(052735397b16dc446b1b71c7e96dfb80) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Materials/interior/floor_002_material.mat using Guid(052735397b16dc446b1b71c7e96dfb80) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '84b2ce297fefbf546f8bb588b9862e12') in 0.042509 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Fringe Game Design/Vendings/Prefabs/Vendings/vending_coffee.prefab
-  artifactKey: Guid(37abfb435500bdb489a6e4946b0358b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Prefabs/Vendings/vending_coffee.prefab using Guid(37abfb435500bdb489a6e4946b0358b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9210109a619366da9bef651b3547b401') in 0.023333 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(5e45fd246c816f14f8c69b776845ea27) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scenes/GameScene.unity using Guid(5e45fd246c816f14f8c69b776845ea27) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd4dc61bdcf419033981cebd38cb1f3a3') in 0.014019 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Scripts/System/CoinManager.cs
-  artifactKey: Guid(279faddd26cfd764c990c97aa696f463) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/System/CoinManager.cs using Guid(279faddd26cfd764c990c97aa696f463) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3ee4801930102efeb29b40f890edf40e') in 0.011169 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Scripts/Gacha/CollectionManager.cs
-  artifactKey: Guid(c8094618b5a726541b712fd2f4d63ee1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/Gacha/CollectionManager.cs using Guid(c8094618b5a726541b712fd2f4d63ee1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6cdefc52e89a528dbf2f6345c8000d3e') in 0.017834 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Scripts/System/AdManager.cs
-  artifactKey: Guid(7933b30def0933145bc2583674ecd86e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/System/AdManager.cs using Guid(7933b30def0933145bc2583674ecd86e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bb7f39d147c2d830addab7b42e626a8b') in 0.014944 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Scripts/Gacha/GachaEntry.cs
-  artifactKey: Guid(97e16d813c595f44594fbb9e818c80f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/Gacha/GachaEntry.cs using Guid(97e16d813c595f44594fbb9e818c80f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7501f2eb3c05135c4f2db49c5d7d204c') in 0.012712 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Fringe Game Design/Vendings/Prefabs/Vending Items/orange_soda.prefab
-  artifactKey: Guid(9c5a66bff3bbd8c4ebbadf4d34b83897) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Prefabs/Vending Items/orange_soda.prefab using Guid(9c5a66bff3bbd8c4ebbadf4d34b83897) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8ecdd21b3e79a5ab0668b10f2f5172ab') in 0.023410 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Scripts/System/SaveManager.cs
-  artifactKey: Guid(a597d390456b5584aad45c2ed340b6bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/System/SaveManager.cs using Guid(a597d390456b5584aad45c2ed340b6bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '15b49f66b34e92e91dd4f1ca4ea27125') in 0.019620 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Fringe Game Design/Vendings/Prefabs/Vendings/vending_soda.prefab
-  artifactKey: Guid(0030769a9114a2a47b69cf9de9066d6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Prefabs/Vendings/vending_soda.prefab using Guid(0030769a9114a2a47b69cf9de9066d6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ddedf69999dfbfca95ab8b798801026c') in 0.028539 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Scenes/StartScene.unity
-  artifactKey: Guid(98fd490f771547442b455967b792bcc1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scenes/StartScene.unity using Guid(98fd490f771547442b455967b792bcc1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '01c34bd0c697e68f646cb83f8fac2e98') in 0.012207 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/Fringe Game Design/Vendings/Textures/Vendings/vending_atlas_specular.png
-  artifactKey: Guid(f65c03825f966e347b307b57059f6382) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Textures/Vendings/vending_atlas_specular.png using Guid(f65c03825f966e347b307b57059f6382) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e853f50746ac0f31c4ec8763b5908266') in 0.029621 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Scripts/Gacha/GachaManager.cs
-  artifactKey: Guid(5c9822220847b3d4f8cfdb4edd172559) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/Gacha/GachaManager.cs using Guid(5c9822220847b3d4f8cfdb4edd172559) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7fff2bf45c24a1530333d8d6f0256c94') in 0.018012 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Fringe Game Design/Vendings/Textures/Vending Items/atlas_vending_items_specular.png
-  artifactKey: Guid(269059a48a8ad56429a74b0ab7eaade2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Textures/Vending Items/atlas_vending_items_specular.png using Guid(269059a48a8ad56429a74b0ab7eaade2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '066dd3757206ce5d7ba3eaacfdc7e803') in 0.031931 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/Fringe Game Design/Vendings/Demo Scene/Vendings Demo Scene/ReflectionProbe-0.exr
-  artifactKey: Guid(ab6eb73f6c8fe7841a461aa914b878e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Fringe Game Design/Vendings/Demo Scene/Vendings Demo Scene/ReflectionProbe-0.exr using Guid(ab6eb73f6c8fe7841a461aa914b878e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '92d49faa3b0919b18f4b932c2cd34aea') in 0.033619 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Prepare
-Switching render pipeline 00000000000000000000000000000000 -> b4b03e67a7e9348428524aa3920dd5ca
-Refreshing native plugins compatible for Editor in 7.27 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 132 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (4.7 MB). Loaded Objects now: 5526.
-Memory consumption went from 122.9 MB to 118.2 MB.
-Total: 9.188300 ms (FindLiveObjects: 0.393600 ms CreateObjectMapping: 0.351200 ms MarkObjects: 5.321700 ms  DeleteObjects: 3.120200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Number of asset objects unloaded after import = 0
