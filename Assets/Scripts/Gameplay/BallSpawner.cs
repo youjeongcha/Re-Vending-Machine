@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 /*공 생성 & 드래그 제어 */
@@ -7,6 +8,8 @@ public class BallSpawner : MonoBehaviour
     public Transform spawnPoint;
 
     private GameObject currentBall;
+
+
 
     /*    public void SpawnBall(int index)
         {
@@ -22,15 +25,18 @@ public class BallSpawner : MonoBehaviour
     {
         if (currentBall == null)
         {
-            int rand = Random.Range(0, MergeManager.Instance.ballPrefabs.Length);
-            //currentBall = Instantiate(ballPrefabs[rand], spawnPoint.position, Quaternion.identity);
-            
+            BallData selectedData = MergeManager.Instance.GetRandomBallData();
+
             // Instantiate()로 랜덤 공 생성
-            currentBall = Instantiate(
-                 MergeManager.Instance.ballPrefabs[rand],
-                 spawnPoint.position,
-                 Quaternion.identity
-            );
+            currentBall = Instantiate(selectedData.prefab, spawnPoint.position, Quaternion.identity);
+
+            // Ball 스크립트에 데이터 주입 (명시성, 유지보수성)
+            Ball ballComponent = currentBall.GetComponent<Ball>();
+            if (ballComponent != null)
+            {
+                ballComponent.data = selectedData;
+            }
+
             currentBall.GetComponent<Rigidbody>().isKinematic = true;  // 드래그 중에는 중력 없음
         }
 

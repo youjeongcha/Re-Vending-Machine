@@ -1,10 +1,11 @@
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
     public GameObject gameOverPanel;
 
     void Awake()
@@ -15,7 +16,10 @@ public class UIManager : MonoBehaviour
 
     public void UpdateScore(int score)
     {
-        scoreText.text = score.ToString();
+        if (scoreText != null)
+        {
+            scoreText.text = $"Score: {score}";
+        }
     }
 
     public void ShowGameOver()

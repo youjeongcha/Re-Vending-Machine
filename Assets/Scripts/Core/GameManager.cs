@@ -71,4 +71,9 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+
+    public void GameOver()
+    {
+
+    }
 }
