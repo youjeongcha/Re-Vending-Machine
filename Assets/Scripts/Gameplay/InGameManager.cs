@@ -13,7 +13,18 @@ public class InGameManager : MonoBehaviour
     {
         GameManager.Instance.SetState(GameState.Playing);
         PlayGameUIMgr.Instance.ShowHUD();
+
+        // 배너 광고
+        AdManager.Instance.LoadBannerAd(); // 새 씬에 들어올 때 반드시 다시 호출!
     }
+
+    public void AdDoubleCoin()
+    {
+        AdManager.Instance.ShowRewardAd(() => {
+            CoinManager.Instance.AddCoins(Score / 5); // 2배 지급
+        });
+    }
+
 
     public void AddScore(int value)
     {
@@ -31,12 +42,18 @@ public class InGameManager : MonoBehaviour
     public void Revive()
     {
         PlayGameUIMgr.Instance.HideGameOverUI();
-        // 공 재생성 등 추가
+
+        //TODO::광고 점검 필요
+        AdManager.Instance.ShowRewardAd(() => {
+            Revive();
+        });
     }
 
     public void Restart()
     {
         Debug.Log("다시 시작");
+        AdManager.Instance.ShowInterstitialAd();
+        //GameManager.Instance.RestartGame();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

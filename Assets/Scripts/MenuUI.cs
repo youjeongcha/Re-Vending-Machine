@@ -18,6 +18,9 @@ public class MenuUI : MonoBehaviour
 
     void Start()
     {
+        // 배너 광고
+        AdManager.Instance.LoadBannerAd(); // 새 씬에 들어올 때 반드시 다시 호출!
+
         if (startButton != null)
             startButton.onClick.AddListener(() => LoadScene(gameSceneName));
 
