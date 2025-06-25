@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Lev4
   m_EditorClassIdentifier: 
   level: 4
-  prefab: {fileID: 5571629195057596738, guid: b5616cb1b51043a4989c176a79fcb50d, type: 3}
+  prefab: {fileID: 3993196853935147428, guid: ba93ae1410e341d41be192f9d77df500, type: 3}
   score: 50

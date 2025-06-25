@@ -3,7 +3,9 @@ using UnityEngine;
 public class CoinManager : MonoBehaviour
 {
     public static CoinManager Instance;
+
     public int Coin { get; private set; }
+
 
     void Awake()
     {
@@ -16,7 +18,8 @@ public class CoinManager : MonoBehaviour
     public void AddCoins(int amount)
     {
         Coin += amount;
-        Save();
+        PlayGameUIMgr.Instance.UpdateCoin(Coin);
+        //Save();
     }
 
     public bool UseCoins(int amount)

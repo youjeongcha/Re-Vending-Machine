@@ -21,7 +21,7 @@ public class GachaManager : MonoBehaviour
             CharacterData drawn = characterPool[index];*/
     CharacterData drawn = gachaTable.GetRandomCharacter();
             CollectionManager.Instance.Register(drawn);
-            UIManager.Instance.ShowGachaResult(drawn);
+            PlayGameUIMgr.Instance.ShowGachaResult(drawn);
         }
     }
 }

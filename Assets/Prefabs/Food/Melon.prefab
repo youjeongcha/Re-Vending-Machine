@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 4804957859275539836}
   - component: {fileID: 7298739600045371830}
   - component: {fileID: -2432513482035789073}
-  - component: {fileID: -6677848053813072152}
+  - component: {fileID: 4513515041532777536}
   - component: {fileID: -1622572375631845785}
+  - component: {fileID: -5559526478969891327}
   m_Layer: 0
   m_Name: Melon
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,10 +112,10 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
---- !u!64 &-6677848053813072152
-MeshCollider:
+--- !u!136 &4513515041532777536
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -131,10 +132,11 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4881227592135064918, guid: b648bf4121327d14d8aec7a994b806e6, type: 3}
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Height: 1.01
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.3482314, z: 0}
 --- !u!114 &-1622572375631845785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,4 +149,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75655f7319ba24248ac850efabae0d4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 26fd3066858f31341a7d998d92736a1f, type: 2}
+  data: {fileID: 11400000, guid: 3990179cb3d6da147bac9f54ada1d9d6, type: 2}
+--- !u!114 &-5559526478969891327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100271328223055971}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e383537862b12a4695b3b806d98a88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zAlignSpeed: 2
+  targetZ: 0
