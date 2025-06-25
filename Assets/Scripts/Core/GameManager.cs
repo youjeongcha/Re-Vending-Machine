@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
 
     public void SetState(GameState newState)
     {
+        //AdManager.Instance.ShowBanner();
         currentState = newState;
         Debug.Log($"GameState ¡æ {newState}");
     }
