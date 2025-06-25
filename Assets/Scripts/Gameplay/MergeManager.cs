@@ -4,6 +4,8 @@ public class MergeManager : MonoBehaviour
 {
     public static MergeManager Instance;
 
+    public InGameManager InGameMgr;
+
     // ballPrefabs 배열로 단계별 프리팹을 관리
     //public GameObject[] ballPrefabs;
 
@@ -42,6 +44,8 @@ public class MergeManager : MonoBehaviour
         if (rbB != null) { rbB.velocity = Vector3.zero; rbB.angularVelocity = Vector3.zero; rbB.isKinematic = true; }
 
         Vector3 mergePos = (a.transform.position + b.transform.position) / 2.0f;
+        mergePos.z = 0f; // 병합 후 생성 위치의 Z축을 0으로 고정
+
         int nextLevel = a.data.level + 1;
 
         // 두 공을 제거하고 다음 단계 공으로 교체
@@ -65,14 +69,14 @@ public class MergeManager : MonoBehaviour
             if (rbNew != null) { rbNew.velocity = Vector3.zero; rbNew.angularVelocity = Vector3.zero; }
 
             // 병합 이펙트
-/*            if (nextData.mergeEffect != null)
-            {
-                var effect = Instantiate(nextData.mergeEffect, mergePos, Quaternion.identity);
-                Destroy(effect.gameObject, 0.7f); // 0.7초 후 자동 제거
-            }*/
+            /*            if (nextData.mergeEffect != null)
+                        {
+                            var effect = Instantiate(nextData.mergeEffect, mergePos, Quaternion.identity);
+                            Destroy(effect.gameObject, 0.7f); // 0.7초 후 자동 제거
+                        }*/
 
             // 점수 추가
-            GameManager.Instance.AddScore(nextData.score);
+            InGameMgr.AddScore(nextData.score);
         }
         else
         {

@@ -21,8 +21,14 @@ public class BallSpawner : MonoBehaviour
                 );
         }*/
 
+
+
+
     void Update()
     {
+        if (GameManager.Instance.currentState != GameState.Playing)
+            return;
+
         if (currentBall == null)
         {
             BallData selectedData = MergeManager.Instance.GetRandomBallData();
@@ -57,5 +63,13 @@ public class BallSpawner : MonoBehaviour
             currentBall.GetComponent<Rigidbody>().isKinematic = false;
             currentBall = null;
         }
+    }
+
+
+    public void SpawnReviveBall()
+    {
+        // 중앙에 공 하나 생성
+        GameObject ball = Instantiate(currentBall, spawnPoint.position, Quaternion.identity);
+        // 또는 마지막 단계보다 낮은 단계 공으로 설정도 가능
     }
 }

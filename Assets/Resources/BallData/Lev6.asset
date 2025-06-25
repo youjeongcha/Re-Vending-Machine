@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Lev6
   m_EditorClassIdentifier: 
   level: 6
-  prefab: {fileID: 2229596374276676037, guid: ac35207e7e886d540bf70d789891d2db, type: 3}
+  prefab: {fileID: 1271865576400040978, guid: 6887084a4d02b064fbd55a21a809634f, type: 3}
   score: 500
