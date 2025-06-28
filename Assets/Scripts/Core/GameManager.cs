@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public InGameManager IngameMgr;
     public GameState currentState { get; private set; } = GameState.Main;
 
     /*    public bool IsGameOver { get; private set; }

@@ -52,6 +52,7 @@ public class BallSpawner : MonoBehaviour
             Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             pos.z = 0;
             currentBall.transform.position = new Vector3(pos.x, spawnPoint.position.y, 0);
+            //currentBall.transform.position = new Vector3(pos.x, spawnPoint.position.y, pos.z);
         }
 
         // 버튼에서 손을 떼면 중력을 켜서 낙하시킴

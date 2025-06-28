@@ -52,8 +52,9 @@ public class InGameManager : MonoBehaviour
     public void Restart()
     {
         Debug.Log("다시 시작");
-        AdManager.Instance.ShowInterstitialAd();
-        //GameManager.Instance.RestartGame();
+        GameManager.Instance.SetState(GameState.Playing);
+        //AdManager.Instance.ShowInterstitialAd(); //이거 광고가 자동으로 꺼져서 그런지 뭔가 다 이상해짐
+        // spawner 작동 이상하고, 머지도 안되는 상황이 되어버림.
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
