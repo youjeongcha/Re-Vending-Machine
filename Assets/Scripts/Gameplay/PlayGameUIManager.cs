@@ -10,7 +10,7 @@ public class PlayGameUIMgr : MonoBehaviour
 
     public GameObject hudPanel; //HUD (scoreText, coinText)
     public GameObject gameOverPanel;
-
+    
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI countdownText;

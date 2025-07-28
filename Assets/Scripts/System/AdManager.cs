@@ -15,6 +15,9 @@ public class AdManager : MonoBehaviour
     private string interstitialAdUnitId = "ca-app-pub-3940256099942544/1033173712";
     private string bannerAdUnitId = "ca-app-pub-3940256099942544/6300978111";
 
+    public int adRewardCount = 0;
+    public const int maxAdRewardCount = 10;
+
     private void Awake()
     {
         if (Instance == null)
@@ -33,6 +36,10 @@ public class AdManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+/*    public void OnUnityAdsReady(string placementId) { }
+    public void OnUnityAdsDidError(string message) { }
+    public void OnUnityAdsDidStart(string placementId) { }*/
 
     public bool IsRewardAdReady()
     {
@@ -81,8 +88,16 @@ public class AdManager : MonoBehaviour
         {
             rewardedAd.Show((Reward reward) =>
             {
-                Debug.Log($"±¤°í º¸»ó È¹µæ: {reward.Amount} {reward.Type}");
-                onSuccess?.Invoke();
+                if (adRewardCount < maxAdRewardCount)
+                {
+                    Debug.Log($"±¤°í º¸»ó È¹µæ: {reward.Amount} {reward.Type}");
+                    adRewardCount++;
+                    onSuccess?.Invoke();
+                }
+                else
+                {
+                    Debug.Log("±¤°í º¸»ó È½¼ö ÃÊ°ú");
+                }
             });
         }
         else
@@ -155,21 +170,4 @@ public class AdManager : MonoBehaviour
         bannerView.LoadAd(adRequest);
         //bannerView.Show(); // <-- Load Á÷ÈÄ ¹Ù·Î Show °¡´É
     }
-
-
-/*    public void ShowBanner()
-    {
-        Debug.Log("µé¾î¿À±ä ÇÏ³Ä?");
-        if (bannerView == null)
-        {
-            Debug.Log("null Å×½ºÆ®");
-        }
-        bannerView?.Show();
-    }
-
-    public void HideBanner()
-    {
-        bannerView?.Hide();
-    }*/
-
 }

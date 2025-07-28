@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuUI : MonoBehaviour
 {
+    public TextMeshProUGUI coinText;
+
     [Header("Button References")]
     public Button startButton;
     public Button gachaButton;
@@ -31,6 +34,14 @@ public class MenuUI : MonoBehaviour
             collectionButton.onClick.AddListener(() => LoadScene(collectionSceneName));
     }
 
+    public void ShowCoin(int coin)
+    {
+        if (coinText == null) 
+            Debug.LogWarning("coinText.Instance is null");
+
+
+        coinText.text = $"Coin: {coin}";
+    }
 
     private void LoadScene(string sceneName)
     {

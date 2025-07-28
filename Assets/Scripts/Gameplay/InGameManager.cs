@@ -1,6 +1,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class InGameManager : MonoBehaviour
 {
@@ -35,6 +36,13 @@ public class InGameManager : MonoBehaviour
     public void GameOver()
     {
         GameManager.Instance.SetState(GameState.GameOver);
+
+        if (Score > SaveManager.Instance.BestScore)
+            SaveManager.Instance.SaveBestScore(Score);
+
+        Debug.Log($"Score : {Score}");
+        Debug.Log($"BestScore : {SaveManager.Instance.BestScore}");
+
         PlayGameUIMgr.Instance.ShowGameOver();
         CoinManager.Instance.AddCoins(Score / 10); // 점수의 10%를 코인으로
     }
