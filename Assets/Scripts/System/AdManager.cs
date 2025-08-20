@@ -90,7 +90,7 @@ public class AdManager : MonoBehaviour
             {
                 if (adRewardCount < maxAdRewardCount)
                 {
-                    Debug.Log($"±¤°í º¸»ó È¹µæ: {reward.Amount} {reward.Type}");
+                    Debug.Log($"±¤°í º¸»ó È¹µæ");
                     adRewardCount++;
                     onSuccess?.Invoke();
                 }

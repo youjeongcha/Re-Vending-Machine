@@ -2,6 +2,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SocialPlatforms.Impl;
+using GoogleMobileAds.Api;
 
 public class InGameManager : MonoBehaviour
 {
@@ -19,11 +20,9 @@ public class InGameManager : MonoBehaviour
         AdManager.Instance.LoadBannerAd(); // 새 씬에 들어올 때 반드시 다시 호출!
     }
 
-    public void AdDoubleCoin()
+    public void AdDoubleCoin() // TMP 버튼에서 실행되도록 설정해둠
     {
-        AdManager.Instance.ShowRewardAd(() => {
-            CoinManager.Instance.AddCoins(Score / 5); // 2배 지급
-        });
+        PlayGameUIMgr.Instance.DoubleRewardCoin(Score);
     }
 
 
@@ -43,19 +42,28 @@ public class InGameManager : MonoBehaviour
         Debug.Log($"Score : {Score}");
         Debug.Log($"BestScore : {SaveManager.Instance.BestScore}");
 
-        PlayGameUIMgr.Instance.ShowGameOver();
+        PlayGameUIMgr.Instance.ShowGameOver(Score);
         CoinManager.Instance.AddCoins(Score / 10); // 점수의 10%를 코인으로
+
+
+        SubmitScore(); //서버에 점수 전송
     }
 
-    public void Revive()
+    async void SubmitScore()
     {
-        PlayGameUIMgr.Instance.HideGameOverUI();
-
-        //TODO::광고 점검 필요
-        AdManager.Instance.ShowRewardAd(() => {
-            Revive();
-        });
+        // **** 랭킹 점수 서버 저장 ****
+        await FirebaseManager.Instance.SubmitScore(Score);
     }
+
+    /*    public void Revive()
+        {
+            PlayGameUIMgr.Instance.HideGameOverUI();
+
+            //TODO::광고 점검 필요
+            AdManager.Instance.ShowRewardAd(() => {
+                //Revive();
+            });
+        }*/
 
     public void Restart()
     {
