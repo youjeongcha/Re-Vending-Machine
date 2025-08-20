@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7616941358455017681}
   - component: {fileID: 5954512978033849159}
   - component: {fileID: 3674306210996790992}
-  - component: {fileID: 8629654236327220784}
   m_Layer: 0
   m_Name: Peach
   m_TagString: Ball
@@ -148,17 +147,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: c4896595dd26cda4995de1ae1f854d31, type: 2}
---- !u!114 &8629654236327220784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7995497868466590050}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e383537862b12a4695b3b806d98a88e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zAlignSpeed: 2
-  targetZ: 0

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7674606472579882101}
   - component: {fileID: 4041322188392828407}
   - component: {fileID: -3141952603314285310}
-  - component: {fileID: -4864156033781006751}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Ball
@@ -148,17 +147,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: dab5f3f0a47a40446804e6ed6745ce1c, type: 2}
---- !u!114 &-4864156033781006751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3452694226032689571}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e383537862b12a4695b3b806d98a88e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zAlignSpeed: 2
-  targetZ: 0

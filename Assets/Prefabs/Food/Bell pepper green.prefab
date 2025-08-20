@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -2757858888174151518}
   - component: {fileID: -6160116458443537672}
   - component: {fileID: -3802602089820518235}
-  - component: {fileID: 3439527791970608274}
   m_Layer: 0
   m_Name: Bell pepper green
   m_TagString: Ball
@@ -148,17 +147,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 7004f0f8ae7b2b94a87df96233a879c6, type: 2}
---- !u!114 &3439527791970608274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6639245508002578564}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e383537862b12a4695b3b806d98a88e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zAlignSpeed: 2
-  targetZ: 0

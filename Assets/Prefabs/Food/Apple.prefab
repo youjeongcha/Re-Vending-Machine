@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 1021826422970944747}
   - component: {fileID: 4143762605213057870}
   - component: {fileID: 2190277101982414724}
-  - component: {fileID: -4220375116782088154}
-  - component: {fileID: -4222466500844492331}
-  - component: {fileID: -8049389177158338935}
-  - component: {fileID: 3619011565227286557}
+  - component: {fileID: -4503496716736136315}
+  - component: {fileID: -3653522816245976973}
+  - component: {fileID: -500034767294138328}
   m_Layer: 0
   m_Name: Apple
-  m_TagString: Ball
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,28 +86,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &-4220375116782088154
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388876489497171537}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.055
-  m_Center: {x: 0, y: 0, z: 0.000018501654}
---- !u!54 &-4222466500844492331
+--- !u!54 &-4503496716736136315
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,7 +113,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &-8049389177158338935
+--- !u!135 &-3653522816245976973
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388876489497171537}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.052
+  m_Center: {x: 0.00003996864, y: -0.002, z: 0.000018501654}
+--- !u!114 &-500034767294138328
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,17 +147,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 26fd3066858f31341a7d998d92736a1f, type: 2}
---- !u!114 &3619011565227286557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388876489497171537}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e383537862b12a4695b3b806d98a88e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zAlignSpeed: 2
-  targetZ: 0

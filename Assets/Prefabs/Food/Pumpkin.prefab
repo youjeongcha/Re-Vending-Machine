@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 5560284799101121156}
   - component: {fileID: 8828675975192657185}
   - component: {fileID: 6728717918809541099}
-  - component: {fileID: 5923484832942200111}
-  - component: {fileID: 3428082912268241122}
-  - component: {fileID: -6470332511059459714}
-  - component: {fileID: 3327224365216621146}
+  - component: {fileID: -8891494753901321214}
+  - component: {fileID: 1782930454241001124}
+  - component: {fileID: 6030263438162500718}
+  - component: {fileID: 5050556267253492892}
   m_Layer: 0
   m_Name: Pumpkin
-  m_TagString: Ball
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,30 +87,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5923484832942200111
-CapsuleCollider:
+--- !u!114 &-8891494753901321214
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5071555915851589694}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.14
-  m_Height: 0.35
-  m_Direction: 0
-  m_Center: {x: -0.00022625923, y: -0.00008139759, z: -0.00018264353}
---- !u!54 &3428082912268241122
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75655f7319ba24248ac850efabae0d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 290b3d94a4b96be4c9606020c2da1c47, type: 2}
+--- !u!54 &1782930454241001124
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,30 +127,49 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &-6470332511059459714
-MonoBehaviour:
+--- !u!136 &6030263438162500718
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5071555915851589694}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75655f7319ba24248ac850efabae0d4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 290b3d94a4b96be4c9606020c2da1c47, type: 2}
---- !u!114 &3327224365216621146
-MonoBehaviour:
+  serializedVersion: 2
+  m_Radius: 0.12
+  m_Height: 0.33
+  m_Direction: 0
+  m_Center: {x: -0.00022625923, y: -0.00008139759, z: -0.00018264353}
+--- !u!136 &5050556267253492892
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5071555915851589694}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e383537862b12a4695b3b806d98a88e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zAlignSpeed: 2
-  targetZ: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.12
+  m_Height: 0.33
+  m_Direction: 2
+  m_Center: {x: -0.00022625923, y: -0.00008139759, z: -0.00018264353}
